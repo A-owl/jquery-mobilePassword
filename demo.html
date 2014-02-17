@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Mobile password input</title>
+  <meta name="description" content="Mobile password input">
+  <meta name="keywords" content="Mobile password input">
+  <meta name="author" content="Marvelous Owl">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="components/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!--[if lt IE 9]>
+    <script src="components/html5shiv.js"></script>
+    <script src="components/respond.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <section id="content" class="container animated fadeInUp">
+    <h1>Mobile password input</h1>
+    <section class="panel">
+      <header class="panel-heading">
+        <h2>Login</h2>
+      </header>
+      <form class="panel-body">
+        <div class="form-group" for="email">
+          <label class="control-label">Email</label>
+          <input type="email" name="email" id="email" required="required" placeholder="test@example.com" class="input"></div>
+        <div class="form-group">
+          <label class="control-label" for="password">Password</label>
+          <input type="password" required="required" name="password" id="password" placeholder="Password" class="input"></div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox">Keep me logged in</label>
+        </div>
+        <a href="#" class="pull-right">
+          <small>Forgot password?</small>
+        </a>
+        <button type="submit" class="btn">Sign in</button>
+        <p class="text-muted">
+          <small>Do not have an account?</small>
+          <a href="#">Register here</a>
+        </p>
+      </form>
+    </section>
+  </section>
+  <!-- /#content -->
+  <footer id="footer">
+    <p>
+      <small>
+        Created by Marvelous Owl
+        <br>© 2014</small>
+    </p>
+  </footer>
+  <!-- /#footer -->
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/jquery.mobilePassword.js"></script>
+  <script>
+  $(document).ready(function() {
+    $("input[type=password]").mobilePassword();
+  });
+  </script>
+</body>
+</html>
