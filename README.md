@@ -5,7 +5,6 @@ jquery.mobilePassword.js
 This is a jQuery plugin that make your password input field like mobile client interaction.
 We can see the last letter.
 
-![enter image description here][1]
 
 - require jQuery1.4+
 - support IE6+
